@@ -1,0 +1,91 @@
+body{
+    /* background-color: black; */
+}
+/* The styling of home page, is done in such a way that, we get all the element in middle of the page */
+.outerDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+/* If the currnet admin is not admin, then this is qoing to show  */
+.adminPass{
+    margin-top: 5px;
+}
+/* Submit button of admin Pass */
+.submitHomeButton{
+    border: 1px solid black;
+    background-color: rgba(227, 144, 238, 0.868);
+    color: black;
+    border-radius: 15px;
+}
+/* Home boxx */
+.home-box{
+    width: 55%;
+    height:fit-content;
+    text-align: center;
+}
+
+.adminPass > form > input{
+    outline: none;
+    border:1px solid rgb(179, 122, 166);
+   border-radius: 7px;
+ }
+/* Here the user can review the co-employee, if admin assign to him */
+.reviewBox{
+    width: 95%;
+    height: fit-content;
+    min-height: 240px;
+    padding: 5px;
+    border: 1px solid rgb(219, 124, 223);
+    border-radius: 10px;
+    
+}
+
+
+
+    
+
+/* class of form , so that we can take it's content, and store it is mongooes */
+.formClass{
+    width: 90%;
+    padding: 10px;
+}
+
+/* .card-out{
+    width: 100%;
+} */
+/* There are two card, while revieweing , we just have to make good use of it
+ */
+.in-card{
+    width: 70%;
+    border: 1px solid black;
+    background-color: rgba(230, 69, 208, 0.518);
+    border-radius: 10px;
+    margin-left: 15%;
+    animation: bounce 0.9s 2;
+}
+@keyframes bounce{
+    10%{
+        
+        height:60;
+    }
+
+    30%{
+        
+        height:60
+    }
+    50%{
+        
+        height: 70;
+        transform: translateX(150px);
+    }
+    75%{
+       
+        height: 70;
+    }
+    100%{
+        transform:translateX(0px);
+    }
+}
